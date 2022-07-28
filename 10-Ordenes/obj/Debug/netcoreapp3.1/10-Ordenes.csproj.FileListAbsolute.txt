@@ -1,0 +1,30 @@
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csprojAssemblyReference.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfoInputs.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfo.cs
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csproj.CoreCompileInputs.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.exe
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.deps.json
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.runtimeconfig.json
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.runtimeconfig.dev.json
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.dll
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.pdb
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csprojAssemblyReference.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfoInputs.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfo.cs
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csproj.CoreCompileInputs.cache
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.dll
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.pdb
+C:\Users\Sarai Peralta\Desktop\EJERCICIOS\C-SHARP\C-SHARP-1\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.genruntimeconfig.cache
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.exe
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.deps.json
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.runtimeconfig.json
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.runtimeconfig.dev.json
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.dll
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\bin\Debug\netcoreapp3.1\10-Ordenes.pdb
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csprojAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.AssemblyInfo.cs
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.dll
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.pdb
+C:\Users\HP\Documents\GitHub\LP 2\LP 2\C#\C-\10-Ordenes\obj\Debug\netcoreapp3.1\10-Ordenes.genruntimeconfig.cache
