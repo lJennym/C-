@@ -1,0 +1,23 @@
+using System;
+public class Gato: Mamifero
+{
+    public string Pelaje { get; set; }
+    public string Raza { get; set; }
+    public bool EsFurioso { get; set; }
+
+    public Gato() // Polimorfismo
+    {
+        EsFurioso = true;
+    }
+
+    public Gato(bool esFurioso) // Polimorfismo
+    {
+        EsFurioso = esFurioso;
+    }
+    public void Rugir()
+    {
+        Console.WriteLine("animal dominante y posesivo con sus dueños. depredador que se alimenta de carne");
+
+    }
+
+}

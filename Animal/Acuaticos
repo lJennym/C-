@@ -1,0 +1,12 @@
+usando el sistema;
+
+clase abstracta pública Acuaticos: Metazoos
+{
+    public int NumeroAletas { get; poner; }
+    cadena pública  Color { get; poner; }
+
+    vacío público Nadar()
+    {
+        Consola. WriteLine("toda especie de animal en el cual habita en el agua o es parte del agua.");
+    }
+}

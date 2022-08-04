@@ -1,0 +1,14 @@
+using System;
+
+public class Pato: Ave
+{
+    public string Comportamiento { get; set; }
+    public int Incubacion { get; set; }
+
+    public void grasna()
+    {
+        Console.WriteLine("Pato animal domestico");
+    }
+    
+
+}

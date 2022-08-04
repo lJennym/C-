@@ -1,0 +1,21 @@
+using System;
+
+public class Tiburon: Acuaticos
+{
+    public string Morder { get; set; }
+
+    public void Ataque()
+    {
+        Console.WriteLine(" dominante depredador en aguas marinas");
+    }
+
+    public void Tiburonsin()
+    {
+        Porras();
+    }
+
+    private void Porras()
+    {
+        Console.WriteLine("carniboro ");
+    }
+}

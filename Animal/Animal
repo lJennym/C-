@@ -1,0 +1,109 @@
+using System;
+
+namespace animales
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            gato g = new gato();
+            Console.WriteLine("especimen");
+            Console.WriteLine("- Gato -");
+            Console.WriteLine("especimen");
+            g.Nombre = "Gato";
+            g.Patas = 4;
+            g.Pelaje = "suave, colores variados";
+            g.Raza = "Variada";
+            g.Comer();
+            g.Caminar();
+            g.Maullar();
+            g.EsFurioso = true;
+
+            Console.WriteLine(g.Nombre);
+            Console.WriteLine(g.Patas);
+            Console.WriteLine(g.Pelaje);
+            Console.WriteLine(g.Raza);         
+
+            Console.WriteLine();
+
+            Loro l = new Loro();
+            Console.WriteLine("especimen");
+            Console.WriteLine("- loro -");
+            Console.WriteLine("especimen");
+            l.Nombre = "loro";
+            l.Patas = 2;
+            l.ColorPlumaje = "algunos son blancos y otros verdes";
+            l.Comer();
+            l.Habla = true;
+            l.Volar();
+
+            Console.WriteLine(l.Nombre);
+            Console.WriteLine(l.Patas);
+
+            Console.WriteLine();
+
+            Pato P = new Pato();
+            Console.WriteLine("especimen");
+            Console.WriteLine("- Pato -");
+            Console.WriteLine("especimen");
+            P.Nombre = "Pato ave domestica";
+            P.Patas = 2;
+            p.Incubacion = 30;
+            p.ColorPlumaje = "algunos son blancos y otros verde con negro";
+            p.Volar();
+            p.Comer();
+            p.grasna();
+
+            Console.WriteLine(p.Nombre);
+            Console.WriteLine(p.Incubacion);
+            Console.WriteLine(p.Patas);
+            Console.WriteLine(p.ColorPlumaje);
+
+            Console.WriteLine();
+
+            Gallina P = new Gallina();
+            Console.WriteLine("--especimen--");
+            Console.WriteLine("- Gallina  -");
+            Console.WriteLine("--especimen--");
+            p.ColorPlumaje = "algunas son blancas, cafes y otras griscon negro";
+            p.Volar();
+            p.Comer();
+            p.canta();
+
+            Console.WriteLine();
+
+            Tiburon t = new Tiburon();
+            Console.WriteLine("-especimen--");
+            Console.WriteLine("- Tiburon -");
+            Console.WriteLine("-especimen--");
+            t.Nombre = "Tiburon";
+            t.NumeroAletas = 2;
+            t.Comer();
+            t.Nadar();
+            t.Color = "Gris con Blanco";
+ 
+            Console.WriteLine(t.Nombre);
+            Console.WriteLine(t.NumeroAletas);
+            Console.WriteLine(t.Color);
+
+            Delfin d = new Delfin();
+            Console.WriteLine("-especimen-");
+            Console.WriteLine("- Delfin -");
+            Console.WriteLine("-especimen-");
+            d.Nombre = "Delfin";
+            d.NumeroAletas = 2;
+            d.Comer();
+            d.Nadar();
+            d.Color = "Pez gris confundible con los tiburones";
+            d.Jugueton();
+            d.Inteligente();
+
+            Console.WriteLine(d.Nombre);
+            Console.WriteLine(d.NumeroAletas);
+            Console.WriteLine(d.Color);
+
+            
+
+            }
+        }
+}

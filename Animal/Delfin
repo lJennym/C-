@@ -1,0 +1,21 @@
+using System;
+
+public class Delfin: Acuaticos
+{
+    public string Morder { get; set; }
+
+    public void Ataque()
+    {
+        Console.WriteLine(" inteligente animal acuatico");
+    }
+
+    public void Delfinus()
+    {
+        Porras();
+    }
+
+    private void Porras()
+    {
+        Console.WriteLine("animal acuatico  carniboro ");
+    }
+}

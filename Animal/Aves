@@ -1,0 +1,12 @@
+public class aves : animal
+{
+public void volar()
+{
+    console.WriteLine("vuelan");
+}
+
+public void hablar()
+{
+    console.WriteLine("hablan");
+}
+}
