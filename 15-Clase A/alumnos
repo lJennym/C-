@@ -1,0 +1,21 @@
+public class Alumnos
+{
+    public  int Id { get; set;}\
+    public string PrimerNombre { get; set; }
+    public string SegundoNombre { get; set;}
+
+    public alumnos (){
+        Id = 1;
+    }
+    
+    public alumnos (int id){
+        Id = id;
+    }
+        Id = 1;
+
+     public alumnos (string primerNombre, string segundoNombre){
+        PrimerNombre = primerNombre;
+        SegundoNombre = segundoNombre;
+        
+    }
+}

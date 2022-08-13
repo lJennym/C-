@@ -1,0 +1,290 @@
+using System;
+using System.Collections.Generic;
+public class DatosdePrueba
+{
+    public List<alumnos> Listadealumnos { get; set; }
+    public List<infoestudiante> Listadeclsesdisponibles { get; set; }
+    public List<profesor> Listadeprofesor { get; set; }
+    public List<notas> Listanotas { get; set; }
+
+    public DatosdePrueba()
+    {
+        Listadealumnos = new List<alumnos>();
+        cargaralumnos();
+
+        Listadeinfoestudiantes = new List<clasesdisponibles>();
+        cargarinfoestudiantes();
+
+        Listadeprofesor = new List<Profesor>();
+        cargarprofesor();
+
+        Listanotas = new List<notas>();
+    }
+
+    private void cargarnotas()
+    {
+        notas n1 = new notas (1, " Aprobada ", 100);
+        Listadenotas.Add(n1);
+
+        notas  n2 = new notas (2, " Reprobada ", 22);
+        Listadenotas.Add(n2);
+
+        notas  n3 = new notas (3, " Aprobada ", 91);
+        Listadenotas.Add(n3);
+
+        notas  n4 = new notas (4, " Aprobada ", 67);
+        Listadenotas.Add(n4);
+
+        notas  n5 = new notas (5, " Reprobada ", 57);
+        Listadenotas.Add(n5);
+
+        notas  n6 = new notas (6, " Reprobada ", 43);
+        Listadenotas.Add(n6);
+    }
+
+    private void cargarclasesdisponibles()
+    {
+        clasesdisponibles c1 = new clasesdisponibles (1, " Matematicas ", 10000);
+        Listadeclasesdisponibles.Add(c1);
+
+        clasesdisponibles c2 = new clasesdisponibles (2, " Español ", 22);
+        Listadeclasesdisponibles.Add(c2);
+
+        clasesdisponibles c3 = new clasesdisponibles (3, " Ingles ", 91);
+        Listadeclasesdisponibles.Add(c3);
+
+        clasesdisponibles c4 = new clasesdisponibles (4, " Informatica ", 67);
+        Listadeclasesdisponibles.Add(c4);
+
+        clasesdisponibles c5 = new clasesdisponibles (5, " Nuevas conexiones ", 57);
+        Listadeclasesdisponibles.Add(c5);
+
+        clasesdisponibles c6 = new notas (6, " Taller de Informatica ", 43);
+        Listadenotas.Add(c6);
+    }
+
+         static void Maid (string[] args)
+        {
+            Alumnos  a = new alumnos();
+            a.Id = 1;
+            a.PrimerNombre = "Astrid";
+            a.SegundoNombre = "Medina";
+
+            Alumnos  b = new Alumnos();
+            b.Id = 2;
+            b.PrimerNombre = "Marin";
+            b.SegundoNombre = "Argueta";
+
+            Alumnos  c = new Alumnos(3);
+            c.Id = 3;
+            c.PrimerNombre = "la castrosa";
+            c.SegundoNombre = "del salon :v";
+
+            Alumnos d = new Alumnos("Ross", "Mcguetta"); 
+
+            Console.WriteLine(a.Id);
+            Console.WriteLine(b.Id);
+            Console.WriteLine(c.Id);
+            Console.WriteLine(d PrimerNombre + " " + d. SegundoNombre);
+            
+
+        }
+
+    private void cargarProfesores()
+    {
+        Profesor p1 = new profesor(1, "Lic. Andrew Collen ", "p0001");
+        Listadeprofesor.Add(p1);
+
+        Profesor p2 = new profesor(2, "Ing. Rosa Andrade "p0002");
+        Listadeprofesor.Add(p2);
+    }
+
+    public void Listarnotas()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("=°.°= Lista de notas =°-°=");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (ver notas in Listadenotas)
+        {
+            Console.WriteLine(notas.nota + " | " + notas.Descripcion + " | " + notas.valor);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Listarclasesdisponibles()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("=°.°= Lista de clases disponibles =°-°=");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (ver clasesdisponibles in Listadeclasesdisponibles)
+        {
+            Console.WriteLine(clasesdisponibles.clasesdisponibles + " | " + clasesdisponibles.Descripcion + " | " + clasesdisponibles.cupo);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Listaralumnos()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de alumnos =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (var alumnos in Listadealumnos)
+        {
+            Console.WriteLine(alumnos.id + " | " + alumnos.PrimerNombre + " | " + alumnos.notas);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Listarprofesor()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de profesores =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (ver profesor in Listadeprofesores)
+        {
+            Console.WriteLine(profesor.ID + " | " + profesor.Nombre + " | " + profesor.idprofesor);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Crearnota()
+    {
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Creando notas =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+
+        Console.WriteLine("Ingrese el codigo ID del alumno: ");
+        string idalumnos = Console.ReadLine();
+
+        Cliente alumnos = Listadealumnos.Find(c => c.ID.ToString() == idalumnos);        
+        if (alumnos == null)
+        {
+            Console.WriteLine("Este alumno no existe en el registro");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("alumnos: " + alumnos.PrimerNombre);
+            Console.WriteLine("");
+        }
+
+        Console.WriteLine("Ingrese el codigo ID de profesor: ");
+        string codigoprofesor = Console.ReadLine();
+
+        Profesor profesor = Listadeprofesor.Find(v => v.id.ToString() == idprofesor);
+        if (profesor == null) 
+        {
+            Console.WriteLine("profesor no existe");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("Profesor: " + profesor.Nombre);
+            Console.WriteLine("");
+        }
+
+        int nuevanota = Listanotas.Count + 1;
+
+        Notas nuevanota = new notas(nuevanota, DateTime.Now, "SPS" + nuevanota, alumnos, profesor);
+        Listanotas.Add(nuevaNotas);
+
+        while(true)
+        {
+            Console.WriteLine("Ingrese su nota: ");
+            string notanotas = Console.ReadLine();
+            Notas notas = Listadenotas.Find(p => p.nota.ToString() == notanotas);        
+            if (notas == null)
+            {
+                Console.WriteLine("nota no encontrada");
+                Console.ReadLine();
+            } else {
+                Console.WriteLine("nota agregada: " + notas.Descripcion + " con nota de: " + notas.valor);
+                nuevanotas.Agregarnotas(notas);
+            }
+
+            Console.WriteLine("Desea continuar? s/n");
+            string continuar = Console.ReadLine();
+            if (continuar.ToLower() == "n") {
+                break;
+            }
+        }
+
+        while(true)
+        {
+            Console.WriteLine("Ingrese la clase que quiere matricular: ");
+            string cupoclasesdisponibles = Console.ReadLine();
+            Notas notas = Listadenotas.Find(p => p.nota.ToString() == notanotas);        
+            if (notas == null)
+            {
+                Console.WriteLine("nota no encontrada");
+                Console.ReadLine();
+            } else {
+                Console.WriteLine("nota agregada: " + notas.Descripcion + " con nota de: " + notas.valor);
+                nuevanotas.Agregarnotas(notas);
+            }
+
+            Console.WriteLine("Desea continuar? s/n");
+            string continuar = Console.ReadLine();
+            if (continuar.ToLower() == "n") {
+                break;
+            }
+        }
+
+        Console.WriteLine("SubTotal de la nota es de: " + nuevanotas.SubTotal);
+
+        Console.WriteLine("repocision de la nota es de: " + nuevanotas.reposicion);
+
+        Console.WriteLine("la nota final del periodo es de: " + nuevanotas.Total);
+        Console.ReadLine();
+    }
+
+    if (Total < 65)
+            {
+                Console.WriteLine("nota Reprobada");
+                Console.ReadLine();
+            }
+
+    public void ListarOrdenes()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de Notas =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");  
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~ ~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= ID | Fecha | SubTotal | reposicion | Total =");
+        Console.WriteLine("=              alumnos | profesor              =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~ ~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");  
+
+        foreach (var notas in Listanotas)
+        {
+            Console.WriteLine(notas.nota + " | " + notas.Fecha + " | " + notas.SubTotal + " | " + notas.reposicion + " | " + notas.Total);
+            Console.WriteLine(notas.alumnos.PrimerNombre + " | " + notas.profesor.Nombre);
+            
+            foreach (var detalle in orden.ListaOrdenDetalle)
+            {
+                Console.WriteLine("     " + detalle.notas.Descripcion + " | " + detalle.Cantidad + " | " + detalle.valor);
+            }
+
+            Console.WriteLine();
+        } 
+
+        Console.ReadLine();
+    }
+}

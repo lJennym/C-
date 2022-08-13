@@ -1,0 +1,13 @@
+public class Notas
+{
+    public int Nota { get; set; }
+    public string Descripcion { get; set; }
+    public double Valor { get; set; }
+
+    public Notas(int codigo, string descripcion, double precio)
+    {
+        Nota = nota;
+        Descripcion = descripcion;
+        Valor = valor;
+    }
+}

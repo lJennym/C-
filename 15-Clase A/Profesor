@@ -1,0 +1,11 @@
+public class Profesor: Persona
+{
+    public string idprofesor { get; set; }
+
+    public Profesor(int id, string nombre, string idprofesor)
+    {
+        ID = id;
+        Nombre = nombre;
+        IDProfesor = idprofesor;
+    }
+}

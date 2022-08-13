@@ -1,0 +1,13 @@
+public class clasesdisponibles
+{
+    public int clasesdisponibles { get; set; }
+    public string Descripcion { get; set; }
+    public double Cupo { get; set; }
+
+    public Notas(int clasesdisponibles, string descripcion, double Cupo)
+    {
+        clasesdisponibles = clasesdisponibles;
+        Descripcion = descripcion;
+        Cupo = cupo;
+    }
+}

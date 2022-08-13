@@ -1,0 +1,211 @@
+using System;
+using System.Collections.Generic;
+public class DatosdePrueba
+{
+    public List<alumnos> Listadealumnos { get; set; }
+    public List<infoestudiante> Listadeinfoestudiantes { get; set; }
+    public List<profesor> Listadeprofesor { get; set; }
+    public List<notas> Listanotas { get; set; }
+
+    public DatosdePrueba()
+    {
+        Listadealumnos = new List<alumnos>();
+        cargaralumnos();
+
+        Listadeinfoestudiantes = new List<infoestudiante>();
+        cargarinfoestudiantes();
+
+        Listadeprofesor = new List<Profesor>();
+        cargarprofesor();
+
+        Listanotas = new List<notas>();
+    }
+
+    private void cargarnotas()
+    {
+        notas n1 = new notas (1, " Aprobada ", 100);
+        Listadenotas.Add(n1);
+
+        notas  n2 = new notas (2, " Reprobada ", 22);
+        Listadenotas.Add(n2);
+
+        notas  n3 = new notas (3, " Aprobada ", 91);
+        Listadenotas.Add(n3);
+
+        notas  n4 = new notas (4, " Aprobada ", 67);
+        Listadenotas.Add(n4);
+
+        notas  n5 = new notas (5, " Reprobada ", 57);
+        Listadenotas.Add(n5);
+
+        notas  n6 = new notas (6, " Reprobada ", 43);
+        Listadenotas.Add(n6);
+    }
+
+    private void cargaralumnos()
+    {
+        alumnos a1 = new alumnos(1, " Medina Astrid ", "52-55-92-37");
+        Listadealumnos.Add(a1);
+
+        alumnos a2 = new alumnos(2, " Marin Argueta ", "65-78-98-100");
+        ListadeClientes.Add(a2);
+
+        alumnos a3 = new alumnos(3, " la castrosa del salon :v ", "100-100-100-100");
+        Listadeprofesor.Add(a3);
+    }
+
+    private void cargarProfesores()
+    {
+        Profesor p1 = new profesor(1, "Lic. Andrew Collen ", "p0001");
+        Listadeprofesor.Add(p1);
+
+        Profesor p2 = new profesor(2, "Ing. Rosa Andrade "p0002");
+        Listadeprofesor.Add(p2);
+    }
+
+    public void ListarProductos()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("=°.°= Lista de Productos =°-°=");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (var producto in ListadeProductos)
+        {
+            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Precio);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Listaralumnos()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de alumnos =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (var alumnos in Listadealumnos)
+        {
+            Console.WriteLine(alumnos.Codigo + " | " + alumnos.Nombre + " | " + cliente.Telefono);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void ListarVendedores()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de profesores =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+        
+        foreach (var profesor in Listadeprofesores)
+        {
+            Console.WriteLine(profesor.Codigo + " | " + profesor.Nombre + " | " + vendedor.CodigoVendedor);
+        }
+
+        Console.ReadLine();
+    }
+
+    public void Crearnota()
+    {
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Creando Orden =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");
+
+        Console.WriteLine("Ingrese el codigo ID del alumno: ");
+        string codigoalumnos = Console.ReadLine();
+
+        Cliente alumnos = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);        
+        if (cliente == null)
+        {
+            Console.WriteLine("Este Cliente no existe en el registro");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("Cliente: " + alumno.Nombre);
+            Console.WriteLine("");
+        }
+
+        Console.WriteLine("Ingrese el codigo ID de profesor: ");
+        string codigoVendedor = Console.ReadLine();
+
+        Vendedor vendedor = ListadeVendedores.Find(v => v.Codigo.ToString() == codigoVendedor);
+        if (vendedor == null) 
+        {
+            Console.WriteLine("Vendedor no existe");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("Vendedor: " + vendedor.Nombre);
+            Console.WriteLine("");
+        }
+
+        int nuevoCodigo = ListaOrdenes.Count + 1;
+
+        Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
+        ListaOrdenes.Add(nuevaOrden);
+
+        while(true)
+        {
+            Console.WriteLine("Ingrese el producto: ");
+            string codigoProducto = Console.ReadLine();
+            Producto producto = ListadeProductos.Find(p => p.Codigo.ToString() == codigoProducto);        
+            if (producto == null)
+            {
+                Console.WriteLine("Producto no encontrado");
+                Console.ReadLine();
+            } else {
+                Console.WriteLine("Producto agregado: " + producto.Descripcion + " con precio de: " + producto.Precio);
+                nuevaOrden.AgregarProducto(producto);
+            }
+
+            Console.WriteLine("Desea continuar? s/n");
+            string continuar = Console.ReadLine();
+            if (continuar.ToLower() == "n") {
+                break;
+            }
+        }
+
+        Console.WriteLine("SubTotal de la orden es de: " + nuevaOrden.SubTotal);
+
+        Console.WriteLine("Impuesto de la orden es de: " + nuevaOrden.Impuesto);
+
+        Console.WriteLine("Total de la orden es de: " + nuevaOrden.Total);
+        Console.ReadLine();
+    }
+
+    public void ListarOrdenes()
+    {
+        Console.Clear();
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Lista de Ordenes =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");  
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~ ~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("= Codigo | Fecha | SubTotal | Impuesto | Total =");
+        Console.WriteLine("=              Cliente | Vendedor              =");
+        Console.WriteLine("~(^v^~)*-.(^v^).-*(~^v^)~ ~(^v^~)*-.(^v^).-*(~^v^)~");
+        Console.WriteLine("");  
+
+        foreach (var orden in ListaOrdenes)
+        {
+            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.SubTotal + " | " + orden.Impuesto + " | " + orden.Total);
+            Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
+            
+            foreach (var detalle in orden.ListaOrdenDetalle)
+            {
+                Console.WriteLine("     " + detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
+            }
+
+            Console.WriteLine();
+        } 
+
+        Console.ReadLine();
+    }
+}
